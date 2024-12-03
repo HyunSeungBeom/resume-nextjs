@@ -11,8 +11,8 @@ export default function Page() {
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">경력</h2>
         <div className="mb-4">
-          <h3 className="text-xl font-semibold">ABC 회사</h3>
-          <p className="text-md">Software Engineer | 2020.01 - 현재</p>
+          <h3 className="text-xl font-semibold">BPMG</h3>
+          <p className="text-md">Software Engineer | 2023.01.02 - 2024.11.30</p>
           <ul className="list-disc list-inside">
             <li>웹 애플리케이션 개발 및 유지보수</li>
             <li>React와 Next.js를 사용한 프론트엔드 개발</li>
