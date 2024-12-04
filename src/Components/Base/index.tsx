@@ -4,29 +4,20 @@ interface CustomIconTextProps {
   icon: React.ReactNode;
   text: string;
   href?: string;
-  link?: boolean;
 }
 
-export const CustomIconText = ({
-  icon,
-  text,
-  href = '',
-  link = true,
-}: CustomIconTextProps) => {
+export const CustomIconText = ({ icon, text, href }: CustomIconTextProps) => {
+  const link = href || '';
+
   return (
     <p className="text-lg flex items-center">
       {icon}
       {link ? (
-        <a
-          href={href}
-          className="ml-2"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={link} className="ml-2 text-purple400" target="_blank">
           {text}
         </a>
       ) : (
-        <span className="ml-2">{text}</span>
+        <span className="ml-2 text-purple400">{text}</span>
       )}
     </p>
   );
