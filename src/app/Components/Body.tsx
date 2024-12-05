@@ -1,14 +1,24 @@
+import { Divider } from '@/Components/Base';
+import { BodyFrame } from './BodyFrame';
+import SkillSection from './SkillSection';
+
 export const Body = () => {
+  const SkillSectionProps = (props: any) => {
+    title: '';
+    skills: [];
+  };
+
+  const title: string = 'INTRODUCE';
+
   return (
     <section className="my-15">
-      <div className="flex gap-x-3">
-        <div className="text-purple500 text-[36px] font-bold">Introduce</div>
-        <div className="text-[16px] leading-7 ml-[105px]">
+      <BodyFrame title="INTRODUCE" className="mb-10">
+        <div className="ml-[70px] leading-7">
           <div className="mb-4">
             저는 코드에 항상 "왜?"라는 질문을 던지며 더 나은 솔루션을 찾아가는
             프론트엔드 개발자입니다. 개발 과정에서 단순히 작동하는 코드를 넘어,
             코드의 구조와 선택이 가지는 의미를 깊이 고민합니다. 이러한 자세는
-            효율적이고 확장 가능한 코드를 작성하는 데 큰 힘이 됩니다.
+            효율적이고 확장 가능한 코드를 작성하는 데 큰 힘이 된다고 생각합니다.
           </div>
           <div className="mb-4">
             저는 커뮤니티와의 원활한 의사소통이 얼마나 중요한지 깊이 이해하고
@@ -29,17 +39,28 @@ export const Body = () => {
             가치를 전달하는 개발자가 되고자 합니다.
           </div>
         </div>
-      </div>
-      {/* <h2 className="text-2xl font-semibold mb-4">경력</h2>
-        <div className="mb-4">
-          <h3 className="text-xl font-semibold">BPMG</h3>
-          <p className="text-md">Software Engineer | 2023.01.02 - 2024.11.30</p>
-          <ul className="list-disc list-inside">
-            <li>웹 애플리케이션 개발 및 유지보수</li>
-            <li>React와 Next.js를 사용한 프론트엔드 개발</li>
-            <li>Node.js와 Express를 사용한 백엔드 개발</li>
-          </ul>
-        </div> */}
+      </BodyFrame>
+      <div className="text-purple500 text-[36px] font-bold">Skill</div>
+      <SkillSection
+      // title="Languages"
+      // skills={['Javascript', 'Typescript', 'HTML/CSS', 'Dart']}
+      />
+      <Divider />
+      <SkillSection
+        title="Frameworks & Librarys"
+        skills={[
+          'React.js',
+          'Next.js',
+          'Flutter',
+          'Styled-components',
+          'Tailwind css',
+          'Recoil',
+          'Redux',
+          'Jotai',
+          'Tanstack-Query',
+        ]}
+      />
+      <Divider />
     </section>
   );
 };

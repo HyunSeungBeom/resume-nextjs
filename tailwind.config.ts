@@ -9,6 +9,12 @@ export default {
   theme: {
     extend: {
       colors: {
+        purple100: '#E9D8FD',
+        purple200: '#D6BCFA',
+        purple300: '#B794F4',
+        purple400: '#9F7AEA',
+        purple500: '#805AD5',
+        purple600: '#6B46C1',
         blue100: '#ECF6FF',
         blue101: '#F2FBFE',
         blue200: '#2D9CDB',

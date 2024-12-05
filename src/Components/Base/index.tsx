@@ -22,3 +22,14 @@ export const CustomIconText = ({ icon, text, href }: CustomIconTextProps) => {
     </p>
   );
 };
+
+export const Divider = () => {
+  return (
+    <div
+      onClick={() => {
+        console.log('clicked');
+      }}
+      className="w-full h-[1px] bg-slate-200 "
+    />
+  );
+};
