@@ -24,12 +24,21 @@ export const CustomIconText = ({ icon, text, href }: CustomIconTextProps) => {
 };
 
 export const Divider = () => {
+  return <div className="w-full h-[1px] bg-slate-200 " />;
+};
+
+export const Badge = ({
+  text,
+  className,
+}: {
+  text: string;
+  className?: string;
+}) => {
   return (
-    <div
-      onClick={() => {
-        console.log('clicked');
-      }}
-      className="w-full h-[1px] bg-slate-200 "
-    />
+    <span
+      className={`flex h-[20px] text-center items-center justify-center bg-gray400 text-white rounded-md px-1.5 py-1 text-xs font-bold ${className}`}
+    >
+      {text}
+    </span>
   );
 };

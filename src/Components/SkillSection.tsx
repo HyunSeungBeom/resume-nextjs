@@ -11,9 +11,9 @@ const SkillSection: React.FC<SkillSectionProps> = ({ title, skills }) => {
       <div className="w-[200px] text-gray-400 font-semibold text-[24px] mb-2">
         {title}
       </div>
-      <div className="w-full flex flex-wrap gap-x-10 text-[16px] justify-between text-start gap-y-2 ml-5">
+      <div className="w-full flex flex-wrap gap-x-10 text-[16px] text-start gap-y-2 ml-5">
         {skills.map((skill, index) => (
-          <li key={index} className="w-1/4">
+          <li key={index} className="w-1/4 flex-grow">
             {skill}
           </li>
         ))}

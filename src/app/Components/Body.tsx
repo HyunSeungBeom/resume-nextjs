@@ -1,15 +1,8 @@
-import { Divider } from '@/Components/Base';
+import { Badge, Divider } from '@/Components/Base';
 import { BodyFrame } from './BodyFrame';
-import SkillSection from './SkillSection';
+import SkillSection from '../../Components/SkillSection';
 
 export const Body = () => {
-  const SkillSectionProps = (props: any) => {
-    title: '';
-    skills: [];
-  };
-
-  const title: string = 'INTRODUCE';
-
   return (
     <section className="my-15">
       <BodyFrame title="INTRODUCE" className="mb-10">
@@ -42,8 +35,8 @@ export const Body = () => {
       </BodyFrame>
       <div className="text-purple500 text-[36px] font-bold">Skill</div>
       <SkillSection
-      // title="Languages"
-      // skills={['Javascript', 'Typescript', 'HTML/CSS', 'Dart']}
+        title="Languages"
+        skills={['Javascript', 'Typescript', 'HTML/CSS', 'Dart']}
       />
       <Divider />
       <SkillSection
@@ -61,6 +54,16 @@ export const Body = () => {
         ]}
       />
       <Divider />
+      <SkillSection
+        title="Tools & IDEs"
+        skills={['Vs Code', 'ClickUp', 'Jira', 'GitHub', 'Git']}
+      />
+      <div className="flex items-end relative mt-[100px]">
+        <div className="text-purple500 text-[36px] font-bold leading-none relative">
+          EXPERIENCE
+        </div>
+        <Badge text="총 1년 11개월" className="ml-2" />
+      </div>
     </section>
   );
 };
