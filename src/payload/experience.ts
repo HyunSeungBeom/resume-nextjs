@@ -1,6 +1,8 @@
 export interface IExperience {
   list: {
-    title: string;
+    company: string;
+    startedAt: string;
+    endedAt: string;
     positions: {
       title: string;
       startedAt: string;
@@ -20,10 +22,12 @@ export interface IExperience {
 const experience: IExperience = {
   list: [
     {
-      title: 'BPMG',
+      company: 'BPMG',
+      startedAt: '2023-01',
+      endedAt: '2024-11',
       positions: [
         {
-          title: '테일즈런너 웹 개발',
+          title: '테일즈런너 웹 프론트 개발',
           startedAt: '2024-08',
           endedAt: '2024-11',
           descriptions: [
@@ -47,7 +51,7 @@ const experience: IExperience = {
           ],
         },
         {
-          title: '테일즈런너 어드민 개발',
+          title: '테일즈런너 어드민 프론트 개발',
           startedAt: '2024-01',
           endedAt: '2024-08',
           descriptions: [
@@ -66,11 +70,26 @@ const experience: IExperience = {
           ],
         },
         {
-          title: 'Kmint 앱 개발',
+          title: 'Kmint 앱 프론트 개발',
           startedAt: '2023-06',
           endedAt: '2023-12',
-          descriptions: ['튜토리얼 구현', '설정 페이지 구현'],
+          descriptions: [
+            '튜토리얼 구현',
+            '설정 페이지 구현',
+            '공통 컴포넌트화 주 구현(modal, toast, bottom sheet, page layout)',
+          ],
           skillKeywords: ['Flutter', 'Dart', 'Git'],
+        },
+        {
+          title: 'PLWI 미니앱 프론트 개발',
+          startedAt: '2023-02',
+          endedAt: '2023-06',
+          descriptions: [
+            '회사 자체적으로 만든 프레임워크 Gemkit으로 개발',
+            '게임 상점 페이지로 블록체인 코인으로 게임 아이템을 구매 가능 할 수 있도록 하는 서비스',
+            '동접수 5000명 이상을 처리하는 서비스',
+          ],
+          skillKeywords: ['JavaScript', 'Git'],
         },
       ],
     },

@@ -11,6 +11,8 @@ export default function Page() {
       <IntroduceComponent />
       <SkillComponent />
       <ExperienceComponent />
+      {/* <EducationComponent /> */}
+      {/* <ETCComponent /> */}
     </div>
   );
 }
