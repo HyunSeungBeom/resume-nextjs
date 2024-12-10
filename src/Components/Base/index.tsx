@@ -23,8 +23,8 @@ export const CustomIconText = ({ icon, text, href }: CustomIconTextProps) => {
   );
 };
 
-export const Divider = () => {
-  return <div className="w-full h-[1px] bg-slate-200 " />;
+export const Divider = ({ className }: { className?: string }) => {
+  return <div className={`w-full h-[1px] bg-slate-200 ${className} `} />;
 };
 
 export const Badge = ({
@@ -40,5 +40,19 @@ export const Badge = ({
     >
       {text}
     </span>
+  );
+};
+
+export const Title = ({
+  title,
+  className,
+}: {
+  title: string;
+  className?: string;
+}) => {
+  return (
+    <div className={`text-purple500 text-[36px] font-bold ${className}`}>
+      {title}
+    </div>
   );
 };

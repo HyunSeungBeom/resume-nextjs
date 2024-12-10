@@ -1,3 +1,6 @@
+import certification, { ICertification } from './certification';
+import education, { IEducation } from './education';
+import etc, { IEtc } from './etc';
 import experience, { IExperience } from './experience';
 import info, { IInfo } from './info';
 import introduce, { IIntroduce } from './introduce';
@@ -8,6 +11,9 @@ const Payload: Payload = {
   skill,
   experience,
   info,
+  education,
+  certification,
+  etc,
 };
 
 interface Payload {
@@ -15,6 +21,9 @@ interface Payload {
   skill: ISkill;
   experience: IExperience;
   info: IInfo;
+  education: IEducation;
+  certification: ICertification;
+  etc: IEtc;
 }
 
 export default Payload;

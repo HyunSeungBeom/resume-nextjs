@@ -1,4 +1,4 @@
-import { Divider } from '@/components/Base';
+import { Divider, Title } from '@/components/Base';
 import SkillSection from '@/components/SkillSection';
 import Payload from '@/payload';
 
@@ -7,7 +7,7 @@ export const SkillComponent = () => {
 
   return (
     <>
-      <div className="text-purple500 text-[36px] font-bold">Skill</div>
+      <Title title="SKILL" />
       <SkillSection title={languages.title} skills={languages.skills} />
       <Divider />
       <SkillSection

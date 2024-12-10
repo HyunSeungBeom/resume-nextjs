@@ -86,8 +86,8 @@ const experience: IExperience = {
           endedAt: '2023-06',
           descriptions: [
             '회사 자체적으로 만든 프레임워크 Gemkit으로 개발',
-            '게임 상점 페이지로 블록체인 코인으로 게임 아이템을 구매 가능 할 수 있도록 하는 서비스',
-            '동접수 5000명 이상을 처리하는 서비스',
+            'Gemkit은 javascript로 작성된 프레임워크로, html/css와 비슷한 sbml/sbss를 사용하여 컴포넌트를 구성',
+            '게임 상점 페이지로 블록체인 코인으로 게임 아이템을 구매 할 수 있도록 하는 앱서비스',
           ],
           skillKeywords: ['JavaScript', 'Git'],
         },
