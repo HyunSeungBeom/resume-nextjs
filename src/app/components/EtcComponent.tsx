@@ -24,7 +24,7 @@ export const EtcComponent = () => {
                   {item.link && (
                     <div className="flex items-center gap-1">
                       <FaGithub className="w-5 h-5" />
-                      <a href={item.link} className="">
+                      <a href={item.link} target="_blank">
                         {item.link}
                       </a>
                     </div>
