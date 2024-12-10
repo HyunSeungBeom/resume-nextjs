@@ -1,5 +1,4 @@
 import Payload from '@/payload';
-import { FaGithub } from 'react-icons/fa';
 
 const FooterComponent = () => {
   const { githubNick } = Payload.info;

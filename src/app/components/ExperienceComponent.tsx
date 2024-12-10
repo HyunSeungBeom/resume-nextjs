@@ -1,4 +1,4 @@
-import { Badge, Divider, Title } from '../../components/Base';
+import { Badge, Divider, Title } from '@/components/Base';
 import Payload from '@/payload';
 
 export const ExperienceComponent = () => {

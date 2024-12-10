@@ -1,4 +1,4 @@
-import { Title } from '../../components/Base';
+import { Title } from '@/components/Base';
 import Payload from '@/payload';
 
 export const IntroduceComponent = () => {
