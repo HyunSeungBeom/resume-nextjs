@@ -19,12 +19,13 @@ export const SkillComponent = () => {
   );
 };
 
-interface SkillSectionProps {
+const SkillSection = ({
+  title,
+  skills,
+}: {
   title: string;
   skills: string[];
-}
-
-const SkillSection: React.FC<SkillSectionProps> = ({ title, skills }) => {
+}) => {
   return (
     <div className="flex justify-center items-center px-20 my-10">
       <div className="w-[200px] text-gray-400 font-semibold text-[24px] mb-2">

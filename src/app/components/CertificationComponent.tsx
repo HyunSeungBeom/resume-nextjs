@@ -17,7 +17,6 @@ export const CertificationComponent = () => {
               </div>
               <div>
                 <div className="text-[24px] font-semibold">{item.title}</div>
-
                 <div className="flex flex-col text-gray-400 text-[16px]  italic font-semibold">
                   <div>{item.subTitle}</div>
                 </div>
