@@ -1,25 +1,44 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Payload from '@/payload';
 import { Title, Badge, Divider } from './base';
 
 export const ExperienceComponent = () => {
   const { list } = Payload.experience;
-  const [date, setDate] = useState<string>('');
+  const [totalExperience, setTotalExperience] = useState<string>('');
 
-  const calculateDate = (startedAt: string, endedAt: string) => {};
+  const calculateTotalExperience = (
+    list: { startedAt: string; endedAt: string }[]
+  ) => {
+    let totalMonths = 0;
+
+    list.forEach(({ startedAt, endedAt }) => {
+      const [startYear, startMonth] = startedAt.split('-').map(Number);
+      const [endYear, endMonth] = endedAt.split('-').map(Number);
+
+      totalMonths += (endYear - startYear) * 12 + (endMonth - startMonth);
+    });
+
+    const years = Math.floor(totalMonths / 12);
+    const months = totalMonths % 12;
+
+    return `총 ${years}년 ${months}개월`;
+  };
+
+  useEffect(() => {
+    const experience = calculateTotalExperience(list);
+    setTotalExperience(experience);
+  }, [list]);
 
   return (
     <div className="items-end relative mt-14">
       <div className="flex items-end">
         <Title title="EXPERIENCE" className="leading-none relative" />
-        <Badge text="총 1년 11개월" className="ml-2" />
+        <Badge text={totalExperience} className="ml-2" />
       </div>
       {list.map((item, index) => {
         const last = list.length - 1;
-
-        console.log(item.startedAt, item.endedAt);
 
         return (
           <div key={index} className="mt-5">
