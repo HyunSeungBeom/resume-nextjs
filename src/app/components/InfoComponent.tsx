@@ -1,4 +1,4 @@
-import { CustomIconText } from '@/components/Base';
+import { CustomIconText } from '@/components/base';
 import Payload from '@/payload';
 import { FaEnvelope, FaGithub, FaPhone, FaTools } from 'react-icons/fa';
 

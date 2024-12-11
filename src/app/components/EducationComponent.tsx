@@ -1,4 +1,4 @@
-import { Divider, Title } from '@/components/Base';
+import { Divider, Title } from '@/components/base';
 import Payload from '@/payload';
 
 export const EducationComponent = () => {

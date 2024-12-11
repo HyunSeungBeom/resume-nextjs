@@ -1,4 +1,4 @@
-import { Divider, Title } from '@/components/Base';
+import { Divider, Title } from '@/components/base';
 import SkillSection from '@/components/SkillSection';
 import Payload from '@/payload';
 
