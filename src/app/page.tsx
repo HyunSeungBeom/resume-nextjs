@@ -11,7 +11,7 @@ import FooterComponent from './components/FooterComponent';
 export default function Page() {
   return (
     <>
-      <div className="w-full h-full py-20 px-52 font-sans">
+      <div className="flex flex-col w-full h-full py-20 px-52 font-sans gap-y-[70px]">
         <InfoComponent />
         <IntroduceComponent />
         <SkillComponent />

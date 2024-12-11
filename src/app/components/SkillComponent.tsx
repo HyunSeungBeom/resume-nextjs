@@ -5,7 +5,7 @@ export const SkillComponent = () => {
   const { languages, frameworksLibraries, toolsIDEs } = Payload.skill;
 
   return (
-    <>
+    <div className="relative">
       <Title title="SKILL" />
       <SkillSection title={languages.title} skills={languages.skills} />
       <Divider />
@@ -15,7 +15,7 @@ export const SkillComponent = () => {
       />
       <Divider />
       <SkillSection title={toolsIDEs.title} skills={toolsIDEs.skills} />
-    </>
+    </div>
   );
 };
 
