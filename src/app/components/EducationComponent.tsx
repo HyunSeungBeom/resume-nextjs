@@ -1,5 +1,5 @@
-import { Divider, Title } from '@/components/base';
 import Payload from '@/payload';
+import { Title, Divider } from './base';
 
 export const EducationComponent = () => {
   const { list } = Payload.education;

@@ -1,5 +1,5 @@
-import { Title } from '@/components/base';
 import Payload from '@/payload';
+import { Title } from './base';
 
 export const IntroduceComponent = () => {
   const { contents } = Payload.introduce;

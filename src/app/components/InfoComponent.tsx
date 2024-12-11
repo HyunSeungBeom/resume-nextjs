@@ -1,6 +1,6 @@
-import { CustomIconText } from '@/components/base';
 import Payload from '@/payload';
 import { FaEnvelope, FaGithub, FaPhone, FaTools } from 'react-icons/fa';
+import { CustomIconText } from './base';
 
 export const InfoComponent = () => {
   const { name, role, phone, email, githubNick } = Payload.info;

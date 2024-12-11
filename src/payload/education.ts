@@ -10,7 +10,7 @@ export interface IEducation {
 const education: IEducation = {
   list: [
     {
-      title: '대학교',
+      title: '한서대학교',
       subTitle: '컴퓨터공학과 졸업',
       startedAt: '2016-03',
       endedAt: '2022-02',

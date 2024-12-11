@@ -1,6 +1,6 @@
-import { Divider, Title } from '@/components/base';
 import Payload from '@/payload';
 import { FaGithub } from 'react-icons/fa';
+import { Title, Divider } from './base';
 
 export const EtcComponent = () => {
   const { list } = Payload.etc;

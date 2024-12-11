@@ -1,8 +1,14 @@
-import { Badge, Divider, Title } from '@/components/base';
+'use client';
+
+import { useState } from 'react';
 import Payload from '@/payload';
+import { Title, Badge, Divider } from './base';
 
 export const ExperienceComponent = () => {
   const { list } = Payload.experience;
+  const [date, setDate] = useState<string>('');
+
+  const calculateDate = (startedAt: string, endedAt: string) => {};
 
   return (
     <div className="items-end relative mt-14">
@@ -12,6 +18,9 @@ export const ExperienceComponent = () => {
       </div>
       {list.map((item, index) => {
         const last = list.length - 1;
+
+        console.log(item.startedAt, item.endedAt);
+
         return (
           <div key={index} className="mt-5">
             <CompanyInfo

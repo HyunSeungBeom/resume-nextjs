@@ -1,5 +1,5 @@
-import { Divider, Title } from '@/components/base';
 import Payload from '@/payload';
+import { Divider, Title } from './base';
 
 export const CertificationComponent = () => {
   const { list } = Payload.certification;
