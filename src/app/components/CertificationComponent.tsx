@@ -6,7 +6,7 @@ export const CertificationComponent = () => {
 
   return (
     <div className="mt-14">
-      <Title title="Certification" />
+      <Title title="CERTIFICATION" />
       {list.map((item, index) => {
         const last = list.length - 1;
         return (
