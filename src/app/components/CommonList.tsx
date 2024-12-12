@@ -14,11 +14,11 @@ const CommonList = ({ list }: { list: ICommonList[] }) => (
       const last = list.length - 1;
       return (
         <div key={index} className="mt-4">
-          <div className="flex gap-x-5">
-            <div className="min-w-[240px] text-[24px] text-gray-500 font-semibold text-end">
+          <div className="flex flex-col md:flex-row gap-x-5">
+            <div className="min-w-[240px] text-[24px] text-gray-500 font-semibold md:text-end">
               {item.startedAt} {item.endedAt && `~ ${item.endedAt}`}
             </div>
-            <div className="flex-grow">
+            <div className="flex-grow mt-2 md:mt-0">
               <div className="text-[24px] font-semibold">{item.title}</div>
               <div className="flex flex-col text-gray-400 text-[16px] italic font-semibold">
                 <div>{item.subTitle}</div>
