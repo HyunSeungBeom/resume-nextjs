@@ -32,14 +32,13 @@ export const ExperienceComponent = () => {
   }, [list]);
 
   return (
-    <div className="items-end relative mt-14">
+    <div className="relative mt-14">
       <div className="flex items-end">
         <Title title="EXPERIENCE" className="leading-none relative" />
         <Badge text={totalExperience} className="ml-2" />
       </div>
       {list.map((item, index) => {
         const last = list.length - 1;
-
         return (
           <div key={index} className="mt-5">
             <CompanyInfo
@@ -47,7 +46,7 @@ export const ExperienceComponent = () => {
               endedAt={item.endedAt}
               company={item.company}
             />
-            <div>
+            <div className="flex flex-col">
               {item.positions.map((position, positionIndex) => (
                 <Position
                   key={positionIndex}
@@ -75,8 +74,8 @@ const CompanyInfo = ({
   endedAt: string;
   company: string;
 }) => (
-  <div className="flex items-center">
-    <span className="w-[300px] px-4 text-end text-[24px] text-gray-500 font-semibold">
+  <div className="flex flex-col items-start text-start md:pl-[100px] md:flex-row md:text-left">
+    <span className="mr-3 text-[24px] text-gray-500 font-semibold">
       {startedAt} ~ {endedAt}
     </span>
     <span className="font-semibold text-[24px]">{company}</span>
@@ -94,9 +93,9 @@ const Position = ({
   title: string;
   descriptions: (string | { main: string; sub: string[] })[];
 }) => (
-  <div className="">
-    <div className="flex">
-      <span className="w-[300px] p-4 text-gray-500 text-end font-semibold text-[16px]">
+  <>
+    <div className="flex flex-col my-3 md:flex-row items-start text-center md:pl-[165px]">
+      <span className="mr-3 text-gray-500 text-[16px] font-semibold ">
         {startedAt} ~ {endedAt}
       </span>
       <span className="flex text-[16px] text-gray-400 font-semibold items-center italic">
@@ -104,7 +103,7 @@ const Position = ({
       </span>
     </div>
     <Descriptions descriptions={descriptions} />
-  </div>
+  </>
 );
 
 const Descriptions = ({
@@ -114,17 +113,17 @@ const Descriptions = ({
 }) => (
   <div className="flex flex-col gap-y-3">
     {descriptions.map((description, index) => (
-      <div key={index} className="ml-[300px] text-[16px]">
+      <div key={index} className="md:ml-[300px] text-[16px]">
         {typeof description === 'string' ? (
           <li>{description}</li>
         ) : (
           <div>
             <li>{description.main}</li>
-            <div className="flex flex-col gap-y-3 mt-2">
+            <div className="flex flex-col gap-y-3 mt-3">
               {description.sub.map((subItem, subIndex) => (
                 <li
                   key={subIndex}
-                  className="px-8"
+                  className="px-8 "
                   style={{ listStyleType: 'circle' }}
                 >
                   {subItem}

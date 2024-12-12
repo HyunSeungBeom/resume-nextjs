@@ -51,7 +51,9 @@ export const Title = ({
   className?: string;
 }) => {
   return (
-    <div className={`text-purple500 text-[36px] font-bold ${className}`}>
+    <div
+      className={`text-purple500 text-[32px] md:text-[36px]  font-bold ${className}`}
+    >
       {title}
     </div>
   );

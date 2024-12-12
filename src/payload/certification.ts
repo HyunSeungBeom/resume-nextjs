@@ -2,7 +2,7 @@ export interface ICertification {
   list: {
     title: string;
     subTitle: string;
-    date: string;
+    startedAt: string;
   }[];
 }
 
@@ -11,7 +11,7 @@ const certification: ICertification = {
     {
       title: '정보처리기사',
       subTitle: '한국산업인력공단',
-      date: '2021-11-26',
+      startedAt: '2021-11-26',
     },
   ],
 };

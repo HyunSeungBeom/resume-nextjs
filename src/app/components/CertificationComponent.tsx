@@ -1,5 +1,6 @@
 import Payload from '@/payload';
 import { Divider, Title } from './base';
+import CommonListComponent from './CommonListComponent';
 
 export const CertificationComponent = () => {
   const { list } = Payload.certification;
@@ -7,7 +8,8 @@ export const CertificationComponent = () => {
   return (
     <div className="mt-14">
       <Title title="CERTIFICATION" />
-      {list.map((item, index) => {
+      <CommonListComponent list={list} />
+      {/* {list.map((item, index) => {
         const last = list.length - 1;
         return (
           <div key={index} className="mt-4">
@@ -17,7 +19,7 @@ export const CertificationComponent = () => {
               </div>
               <div>
                 <div className="text-[24px] font-semibold">{item.title}</div>
-                <div className="flex flex-col text-gray-400 text-[16px]  italic font-semibold">
+                <div className="flex flex-col text-gray-400 text-[16px] italic font-semibold">
                   <div>{item.subTitle}</div>
                 </div>
               </div>
@@ -25,7 +27,7 @@ export const CertificationComponent = () => {
             {last !== index && <Divider className="my-4" />}
           </div>
         );
-      })}
+      })} */}
     </div>
   );
 };
