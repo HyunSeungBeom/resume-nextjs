@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from './components/Footer';
-import { Introduce } from './components/Introduce';
 import { Info } from './components/Info';
+import { Introduce } from './components/Introduce';
 import { Skill } from './components/Skill';
 import { Experience } from './components/Experience';
 import { Education } from './components/Education';

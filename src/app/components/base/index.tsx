@@ -52,7 +52,7 @@ export const Title = ({
 }) => {
   return (
     <div
-      className={`text-purple500 text-[32px] md:text-[36px]  font-bold ${className}`}
+      className={`text-purple500 text-[32px] md:text-[36px]  font-medium ${className}`}
     >
       {title}
     </div>
