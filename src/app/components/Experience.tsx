@@ -54,6 +54,7 @@ export const Experience = () => {
                   endedAt={position.endedAt}
                   title={position.title}
                   descriptions={position.descriptions}
+                  skillKeywords={position.skillKeywords}
                 />
               ))}
             </div>
@@ -87,11 +88,13 @@ const Position = ({
   endedAt,
   title,
   descriptions,
+  skillKeywords,
 }: {
   startedAt: string;
   endedAt: string;
   title: string;
   descriptions: (string | { main: string; sub: string[] })[];
+  skillKeywords: string[];
 }) => (
   <>
     <div className="flex flex-col my-3 md:flex-row items-start text-center md:pl-[165px]">
@@ -103,6 +106,7 @@ const Position = ({
       </span>
     </div>
     <Descriptions descriptions={descriptions} />
+    <Skills skillKeywords={skillKeywords} />
   </>
 );
 
@@ -136,3 +140,18 @@ const Descriptions = ({
     ))}
   </div>
 );
+
+const Skills = ({ skillKeywords }: { skillKeywords: string[] }) => {
+  return (
+    <div className="flex flex-wrap mt-3 md:pl-[320px]">
+      {skillKeywords.map((skill, index) => (
+        <span
+          key={index}
+          className="flex h-[20px] text-center items-center justify-center bg-purple400 text-white rounded-md px-1.5 py-1 text-xs font-bold mr-2 mb-2"
+        >
+          {skill}
+        </span>
+      ))}
+    </div>
+  );
+};

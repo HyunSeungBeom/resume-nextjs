@@ -34,7 +34,7 @@ const SkillSection = ({
         </div>
         <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-4">
           {skills.map((skill, index) => (
-            <div key={index} className="bg-gray-100 p-4 rounded-lg shadow-md">
+            <div key={index} className="bg-gray-500 p-4 rounded-lg shadow-md">
               {skill}
             </div>
           ))}

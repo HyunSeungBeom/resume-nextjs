@@ -6,7 +6,7 @@ import info, { IInfo } from './info';
 import introduce, { IIntroduce } from './introduce';
 import { ISkill, skill } from './skill';
 
-const Payload: Payload = {
+const Payload: IPayload = {
   introduce,
   skill,
   experience,
@@ -16,7 +16,7 @@ const Payload: Payload = {
   etc,
 };
 
-interface Payload {
+interface IPayload {
   introduce: IIntroduce;
   skill: ISkill;
   experience: IExperience;
