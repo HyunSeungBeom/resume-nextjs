@@ -1,7 +1,7 @@
 import Payload from '@/payload';
 import { Title, Divider } from './base';
 
-export const SkillComponent = () => {
+export const Skill = () => {
   const { languages, frameworksLibraries, toolsIDEs } = Payload.skill;
 
   return (

@@ -1,4 +1,3 @@
-import { FaGithub } from 'react-icons/fa';
 import { Divider } from './base';
 
 interface ICommonList {
@@ -9,7 +8,7 @@ interface ICommonList {
   link?: string;
 }
 
-const CommonListComponent = ({ list }: { list: ICommonList[] }) => (
+const CommonList = ({ list }: { list: ICommonList[] }) => (
   <>
     {list.map((item, index) => {
       const last = list.length - 1;
@@ -44,4 +43,4 @@ const CommonListComponent = ({ list }: { list: ICommonList[] }) => (
   </>
 );
 
-export default CommonListComponent;
+export default CommonList;

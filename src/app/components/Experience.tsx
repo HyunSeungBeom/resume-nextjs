@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Payload from '@/payload';
 import { Title, Badge, Divider } from './base';
 
-export const ExperienceComponent = () => {
+export const Experience = () => {
   const { list } = Payload.experience;
   const [totalExperience, setTotalExperience] = useState<string>('');
 

@@ -2,7 +2,7 @@ import Payload from '@/payload';
 import { FaEnvelope, FaGithub, FaPhone, FaTools } from 'react-icons/fa';
 import { CustomIconText } from './base';
 
-export const InfoComponent = () => {
+export const Info = () => {
   const { name, role, phone, email, githubNick } = Payload.info;
 
   return (

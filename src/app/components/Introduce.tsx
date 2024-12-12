@@ -1,7 +1,7 @@
 import Payload from '@/payload';
 import { Title } from './base';
 
-export const IntroduceComponent = () => {
+export const Introduce = () => {
   const { contents } = Payload.introduce;
 
   return (

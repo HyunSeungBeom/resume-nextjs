@@ -1,6 +1,6 @@
 import Payload from '@/payload';
 
-const FooterComponent = () => {
+const Footer = () => {
   const { githubNick } = Payload.info;
 
   return (
@@ -19,4 +19,4 @@ const FooterComponent = () => {
   );
 };
 
-export default FooterComponent;
+export default Footer;
