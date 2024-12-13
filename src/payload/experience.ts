@@ -31,14 +31,14 @@ const experience: IExperience = {
           startedAt: '2024-08',
           endedAt: '2024-11',
           descriptions: [
-            '게시판 페이지 (런너게시판, 창작게시판, 길드게시판, 토론게시판, 크리에이터신청) 유지보수',
-            '운영 정책에 따른 유저 상태 변경 및 데이터 처리 (신고처리, 글/댓글 삭제, 영구제재)',
-            'React Router의 loader를 활용하여 백엔드에서 제공된 API를 통해 서비스의 유지보수 상태를 실시간으로 감지 및 처리 (점검기능, 점검완료, 점검중)',
+            '커뮤니티 웹의 중심인 게시판 페이지(런너게시판, 창작게시판, 길드게시판, 토론게시판, 크리에이터신청) 개발 및 유지보수',
+            '운영 정책에 따른 유저 상태 변경 및 데이터 처리(신고처리, 글/댓글 삭제, 영구제재)',
+            'React Router의 loader를 활용하여 백엔드에서 제공된 API를 통해 서비스의 유지보수 상태를 실시간으로 감지 및 처리(점검기능, 점검완료, 점검중)',
             {
               main: '이벤트 페이지 레이아웃화 및 개발',
               sub: [
                 '반복적으로 진행되는 2주 단위 이벤트 페이지를 위한 공통 레이아웃 설계 및 구현',
-                '이벤트별 요구사항에 따른 API 통신 및 비동기 데이터 처리 구현.',
+                '이벤트별 요구사항에 따른 API 통신 및 비동기 데이터 처리 구현',
               ],
             },
           ],
@@ -74,9 +74,8 @@ const experience: IExperience = {
           startedAt: '2023-06',
           endedAt: '2023-12',
           descriptions: [
-            '튜토리얼 구현',
-            '설정 페이지 구현',
-            '공통 컴포넌트화 주 구현(modal, toast, bottom sheet, page layout)',
+            '튜토리얼 페이지, 설정 페이지 개발',
+            '공통 컴포넌트화 주 구현(Modal, Toast, BottomSheet, pageLayout)',
           ],
           skillKeywords: ['Flutter', 'Dart', 'Git'],
         },
@@ -86,8 +85,8 @@ const experience: IExperience = {
           endedAt: '2023-06',
           descriptions: [
             '회사 자체적으로 만든 프레임워크 Gemkit으로 개발',
-            'Gemkit은 javascript로 작성된 프레임워크로, html/css와 비슷한 sbml/sbss를 사용하여 컴포넌트를 구성',
             '게임 상점 페이지로 블록체인 코인으로 게임 아이템을 구매 할 수 있도록 하는 앱서비스',
+            '사용자 수 5000명 이상',
           ],
           skillKeywords: ['JavaScript', 'Git'],
         },
