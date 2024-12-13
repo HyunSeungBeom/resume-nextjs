@@ -36,7 +36,7 @@ const SkillSection = ({
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="bg-gray-500 px-4 py-2 rounded-lg shadow-md"
+              className="bg-gray-100 px-4 py-2 rounded-lg shadow-md"
             >
               {skill}
             </div>
