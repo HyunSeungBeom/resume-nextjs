@@ -147,7 +147,7 @@ const Skills = ({ skillKeywords }: { skillKeywords: string[] }) => {
       {skillKeywords.map((skill, index) => (
         <span
           key={index}
-          className="flex h-[20px] text-center items-center justify-center bg-purple400 text-white rounded-md px-1.5 py-1 text-xs font-bold mr-2 mb-2"
+          className="flex h-[20px] text-center items-center justify-center bg-blue-500 text-white rounded-md px-1.5 py-1 text-xs font-bold mr-2 mb-2"
         >
           {skill}
         </span>

@@ -13,11 +13,11 @@ export const CustomIconText = ({ icon, text, href }: CustomIconTextProps) => {
     <p className="text-lg flex items-center">
       {icon}
       {link ? (
-        <a href={link} className="ml-2 text-purple400" target="_blank">
+        <a href={link} className="ml-2 text-blue300" target="_blank">
           {text}
         </a>
       ) : (
-        <span className="ml-2 text-purple400">{text}</span>
+        <span className="ml-2 text-blue300">{text}</span>
       )}
     </p>
   );
@@ -52,7 +52,7 @@ export const Title = ({
 }) => {
   return (
     <div
-      className={`text-purple500 text-[32px] md:text-[36px]  font-medium ${className}`}
+      className={`text-blue300 text-[32px] md:text-[36px]  font-medium ${className}`}
     >
       {title}
     </div>

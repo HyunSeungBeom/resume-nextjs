@@ -23,7 +23,7 @@ const CommonList = ({ list }: { list: ICommonList[] }) => (
               <div className="flex flex-col text-gray-400 text-[16px] italic font-semibold">
                 <div>{item.subTitle}</div>
                 {item.link && (
-                  <div className="flex items-center gap-1 text-purple-500">
+                  <div className="flex items-center gap-1 text-blue200">
                     <a href={item.link} target="_blank">
                       {item.link}
                     </a>
