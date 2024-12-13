@@ -3,28 +3,11 @@
 import { useEffect, useState } from 'react';
 import Payload from '@/payload';
 import { Title, Badge, Divider } from './base';
+import { calculateTotalExperience } from '@/util';
 
 export const Experience = () => {
   const { list } = Payload.experience;
   const [totalExperience, setTotalExperience] = useState<string>('');
-
-  const calculateTotalExperience = (
-    list: { startedAt: string; endedAt: string }[]
-  ) => {
-    let totalMonths = 0;
-
-    list.forEach(({ startedAt, endedAt }) => {
-      const [startYear, startMonth] = startedAt.split('-').map(Number);
-      const [endYear, endMonth] = endedAt.split('-').map(Number);
-
-      totalMonths += (endYear - startYear) * 12 + (endMonth - startMonth);
-    });
-
-    const years = Math.floor(totalMonths / 12);
-    const months = totalMonths % 12;
-
-    return `총 ${years}년 ${months}개월`;
-  };
 
   useEffect(() => {
     const experience = calculateTotalExperience(list);
