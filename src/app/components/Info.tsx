@@ -9,12 +9,7 @@ export const Info = () => {
   return (
     <header className="flex flex-col md:flex-row mb-8 items-center gap-x-10 gap-y-4">
       <div className="flex-shrink-0">
-        <Image
-          src={`https://avatars.githubusercontent.com/${githubNick}`}
-          alt="avatar"
-          width={240}
-          height={240}
-        />
+        <Image src="/seungbeom.jpeg" alt="avatar" width={240} height={240} />
       </div>
       <div className="flex flex-col gap-2 text-center md:text-left">
         <h1 className="text-3xl md:text-4xl font-bold mb-3">{name}</h1>
