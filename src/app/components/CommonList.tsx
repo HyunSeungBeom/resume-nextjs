@@ -1,4 +1,5 @@
 import { Divider } from './base';
+import Link from 'next/link';
 
 interface ICommonList {
   startedAt: string;
@@ -24,9 +25,9 @@ const CommonList = ({ list }: { list: ICommonList[] }) => (
                 <div>{item.subTitle}</div>
                 {item.link && (
                   <div className="flex items-center gap-1 text-blue200">
-                    <a href={item.link} target="_blank">
+                    <Link href={item.link} target="_blank">
                       {item.link}
-                    </a>
+                    </Link>
                   </div>
                 )}
               </div>

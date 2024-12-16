@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 interface CustomIconTextProps {
   icon: React.ReactNode;
@@ -13,9 +14,9 @@ export const CustomIconText = ({ icon, text, href }: CustomIconTextProps) => {
     <p className="text-lg flex items-center">
       {icon}
       {link ? (
-        <a href={link} className="ml-2 text-blue300" target="_blank">
+        <Link href={link} className="ml-2 text-blue300" target="_blank">
           {text}
-        </a>
+        </Link>
       ) : (
         <span className="ml-2 text-blue300">{text}</span>
       )}
