@@ -11,7 +11,7 @@ export const calculateTotalExperience = (
   });
 
   const years = Math.floor(totalMonths / 12);
-  const months = totalMonths % 12;
+  const months = (totalMonths % 12) + 1;
 
   return `총 ${years}년 ${months}개월`;
 };
