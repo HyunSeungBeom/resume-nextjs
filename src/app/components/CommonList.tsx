@@ -16,7 +16,7 @@ const CommonList = ({ list }: { list: ICommonList[] }) => (
       return (
         <div key={index} className="mt-4">
           <div className="flex flex-col md:flex-row gap-x-5">
-            <div className="min-w-[240px] text-[24px] text-gray-500 font-semibold md:text-end">
+            <div className="min-w-[240px] text-[24px] text-gray-500 font-semibold ">
               {item.startedAt} {item.endedAt && `~ ${item.endedAt}`}
             </div>
             <div className="flex-grow mt-2 md:mt-0">

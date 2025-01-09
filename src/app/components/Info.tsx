@@ -1,10 +1,16 @@
 import Image from 'next/image';
 import Payload from '@/payload';
-import { FaEnvelope, FaGithub, FaPhone, FaTools } from 'react-icons/fa';
+import {
+  FaEnvelope,
+  FaGithub,
+  FaPhone,
+  FaTools,
+  FaFileAlt,
+} from 'react-icons/fa';
 import { CustomIconText } from './base';
 
 export const Info = () => {
-  const { name, role, phone, email, githubNick } = Payload.info;
+  const { name, role, phone, email, githubNick, portfolio } = Payload.info;
 
   return (
     <header className="flex flex-col md:flex-row mb-8 items-center gap-x-10 gap-y-4">
@@ -22,8 +28,13 @@ export const Info = () => {
         />
         <CustomIconText
           icon={<FaGithub />}
-          text={`https://github.com/${githubNick}`}
+          text={`Github 링크`}
           href={`https://github.com/${githubNick}`}
+        />
+        <CustomIconText
+          icon={<FaFileAlt />}
+          text={'Portfolio 링크'}
+          href={portfolio}
         />
       </div>
     </header>
