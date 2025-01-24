@@ -30,6 +30,6 @@ export const skill: ISkill = {
   },
   toolsIDEs: {
     title: 'Tools & IDEs',
-    skills: ['VS Code', 'ClickUp', 'Jira', 'GitHub', 'Git'],
+    skills: ['VS Code', 'ClickUp', 'Jira', 'GitHub', 'Git', 'Cursor'],
   },
 };
