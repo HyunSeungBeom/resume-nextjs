@@ -14,7 +14,7 @@ const info: IInfo = {
   email: 'ghfk100@naver.com',
   githubNick: 'HyunSeungBeom',
   portfolio:
-    'https://pattern-donkey-272.notion.site/portfolio-173f25783f0e8063a8f9f02d15b78236?pvs=74',
+    'https://pattern-donkey-272.notion.site/Portfolio-19ff25783f0e80fbbc4cc5cebbcbe546?pvs=74',
 };
 
 export default info;
